@@ -22,6 +22,35 @@ const routes = [
     path: '/options2-1',
     name: 'Options2-1',
     component: () => import('../views/options2/Options2-1.vue')
+  }, {
+    path: 'home',
+    name: 'Home',
+    component: () => import('../views/Index.vue')
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import('../views/About.vue')
+  },
+  {
+    path: '/car',
+    name: 'Car',
+    component: () => import('../views/Car.vue')
+  },
+  {
+    path: '/accounting',
+    name: 'Accounting',
+    component: () => import('../views/Accounting2.vue')
+  },
+  {
+    path: '/book',
+    name: 'Book',
+    component: () => import( '../views/Book.vue')
+  },
+  {
+    path: '/home2',
+    name: 'Home2',
+    component: () => import('../views/Home2.vue')
   }
 ]
 

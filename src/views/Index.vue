@@ -35,9 +35,6 @@
           :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
         >
             <a-spin tip="Loading..." v-if="showloading">
-                <div class="spin-content">
-                    我的描述文案是自定义的。。。
-                </div>
             </a-spin>
                 <iframe  :src='currentRouter' frameborder="0" class="content" ></iframe>
         </a-layout-content>
@@ -56,7 +53,7 @@ export default {
         defaultSelectedKeys: ['options1-1'],
         rootSubmenuKeysItem1: ['options1-1'],
         rootSubmenuKeysItem2: ['options2-1'],
-        showloading: false
+        showloading: true
     }
   },
   methods: {
