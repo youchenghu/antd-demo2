@@ -12,9 +12,12 @@
             @openChange="onOpenChange" 
             @click='handleChangeSubItem'>
             <a-sub-menu key="options1">
-                <span slot="title"><a-icon type="mail" /><span>Navigation One</span></span>
-                <a-menu-item key="options1-1">
-                菜单1-1
+                <span slot="title"><a-icon type="mail" /><span>合伙人专区</span></span>
+                <a-menu-item key="accounting">
+                账单
+                </a-menu-item>
+                <a-menu-item key="car">
+                汽车
                 </a-menu-item>
             </a-sub-menu>
             <a-sub-menu key="options2">
@@ -47,13 +50,13 @@ export default {
   data() {
     return {
         collapsed: false,
-        currentRouter: 'options1-1',
+        currentRouter: 'accounting',
         rootSubmenuKeys: ['options1', 'options2'],
         openKeys: ['options1'],
-        defaultSelectedKeys: ['options1-1'],
-        rootSubmenuKeysItem1: ['options1-1'],
+        defaultSelectedKeys: ['accounting'],
+        rootSubmenuKeysItem1: ['accounting'],
         rootSubmenuKeysItem2: ['options2-1'],
-        showloading: true
+        showloading: false
     }
   },
   methods: {
